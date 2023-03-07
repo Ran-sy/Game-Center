@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ranim | Game Center</title>
+    <link rel="stylesheet" href="./public/output.css" />
+    <link rel="stylesheet" href="./src/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=VT323"
+    />
+    <meta charset="utf-8" />
+    <meta name="author" content="Ranim" />
+    <meta name="description" content="Game center for js games" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="fixed top-0 left-0 w-full">
+      <div
+        id="nav"
+        class="flex justify-around align-middle z-50 bg-[#32D2FD]/70 shadow-lg shadow-gray-400 lg:justify-around"
+      >
+        <img
+          src="../public/images/gameCenter.png"
+          alt="game center"
+          loading="lazy"
+          class="w-32 lg:w-45"
+        />
+        <div>
+          <ul class="hidden md:flex p-4">
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#RPS">RPS</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#second">second</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#three">three</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#four">four</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#five">five</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#six">six</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#seven">seven</a>
+            </li>
+            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
+              <a href="/#eight">eight</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-xl p-4 md:hidden" onclick="setNav()">
+          <i class="fa-solid fa-bars cursor-pointer"></i>
+        </div>
+      </div>
+      <div
+        id="sideNav"
+        class="absolute top-0 left-[-200%] z-50 w-full h-screen bg-white/80 ease-in-out duration-500 md:left-[-200%]"
+      >
+        <div class="flex flex-col justify-around align-middle p-2">
+          <div class="bg-[#b0eefe] p-4 flex justify-around align-middle">
+            <img
+              src="/public/images/gameCenter.png"
+              alt="gameCenter"
+              class="w-28"
+              loading="lazy"
+            />
+            <div class="text-2xl px-4 py-2 cursor-pointer" onclick="setNav()">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <ul class="flex flex-col p-4">
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#RPS"
+              >RPS</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#second"
+              >second</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#three"
+              >three</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#four"
+              >four</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#five"
+              >five</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#six"
+              >six</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#seven"
+              >seven</a
+            >
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#eight"
+              >eight</a
+            >
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="relative -z-10 my-14 w-full h-screen bg-gradient-to-tl from-[#A90055] to-[#010125]"
+    >
+      <div
+        class="absolute w-[80%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
+      >
+        <img
+          src="/public/images/proGamer.jpg"
+          alt="pro gamer"
+          loading="lazy"
+          class="container"
+        />
+        <p
+          class="absolute left-[50%] top-[100%] translate-x-[-50%] translate-y-[-50%] text-4xl bg-white font-bold font-vt text-[#FD7F32] rounded-lg p-4 uppercase ease-in skew-x-12 duration-300"
+        >
+          Let's play
+        </p>
+      </div>
+    </main>
+    <section>
+      <div class="m-auto text-center grid lg:grid-cols-2 gap-8">
+        <div
+          id="RPS"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Rock Paper Scessior"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Rock Paper Scessior</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="second"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Second"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Second</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="three"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Three"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Three</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="four"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Four"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Four</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="five"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Five"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Five</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="six"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Six"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Six</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="seven"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Seven"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Seven</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+        <div
+          id="eight"
+          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+        >
+          <img
+            src="/public/images/rps.jpg"
+            alt="Eight"
+            loading="lazy"
+            class="bg-cover group-hover:opacity-40"
+          />
+          <div
+            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+          >
+            <h3 class="font-vt">Eight</h3>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Play Now</a>
+            </button>
+            <button class="block p-4">
+              <a href="/#" target="_blank">Go Play It</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full p-2">
+      <div class="bg-[#FD7F32] flex justify-around align-middle">
+        <p class="uppercase text-2xl font-bold font-vt p-2">
+          made by: Ranim | 2023
+        </p>
+        <p class="text-transparent shadow-2xl shadow-blue-900">
+          ----------------------------
+        </p>
+        <p class="text-2xl p-2 shadow-md shadow-blue-900">
+          <i class="fa-solid fa-gamepad"></i>
+        </p>
+      </div>
+    </footer>
+
+    <!-- <img src="https://source.unsplash.com/random/" class="bg-danger img-thumbnail" alt="img-thumbnail"> -->
+    <!-- <li><iframe src="https://embed.lottiefiles.com/animation/24703"></iframe></li> -->
+
+    <script type="text/javascript" src="src\js\script.js"></script>
+  </body>
+</html>
