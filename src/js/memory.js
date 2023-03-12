@@ -1,16 +1,16 @@
 const cardsArray = [
-  { id: 1, name: "bread", img: "/public/images/bread.webp" },
-  { id: 2, name: "burger", img: "/public/images/burger.png" },
-  { id: 3, name: "chocolate", img: "/public/images/chocolate.png" },
-  { id: 4, name: "icecream", img: "/public/images/icecream.png" },
-  { id: 5, name: "taco", img: "/public/images/taco.png" },
-  { id: 6, name: "sushi", img: "/public/images/sushi.webp" },
-  { id: 1, name: "bread", img: "/public/images/bread.webp" },
-  { id: 2, name: "burger", img: "/public/images/burger.png" },
-  { id: 3, name: "chocolate", img: "/public/images/chocolate.png" },
-  { id: 4, name: "icecream", img: "/public/images/icecream.png" },
-  { id: 5, name: "taco", img: "/public/images/taco.png" },
-  { id: 6, name: "sushi", img: "/public/images/sushi.webp" },
+  { id: 1, name: "bread", img: "https://ran-sy.github.io/game-center/public/images/bread.webp" },
+  { id: 2, name: "burger", img: "https://ran-sy.github.io/game-center/public/images/burger.png" },
+  { id: 3, name: "chocolate", img: "https://ran-sy.github.io/game-center/public/images/chocolate.png" },
+  { id: 4, name: "icecream", img: "https://ran-sy.github.io/game-center/public/images/icecream.png" },
+  { id: 5, name: "taco", img: "https://ran-sy.github.io/game-center/public/images/taco.png" },
+  { id: 6, name: "sushi", img: "https://ran-sy.github.io/game-center/public/images/sushi.webp" },
+  { id: 1, name: "bread", img: "https://ran-sy.github.io/game-center/public/images/bread.webp" },
+  { id: 2, name: "burger", img: "https://ran-sy.github.io/game-center/public/images/burger.png" },
+  { id: 3, name: "chocolate", img: "https://ran-sy.github.io/game-center/public/images/chocolate.png" },
+  { id: 4, name: "icecream", img: "https://ran-sy.github.io/game-center/public/images/icecream.png" },
+  { id: 5, name: "taco", img: "https://ran-sy.github.io/game-center/public/images/taco.png" },
+  { id: 6, name: "sushi", img: "https://ran-sy.github.io/game-center/public/images/sushi.webp" },
 ];
 var cardsChk = [],
   flippedCardImgs = [],
@@ -32,7 +32,7 @@ function createBoard() {
   cardsArray.sort(() => 0.5 - Math.random());
   for (let i = 1; i <= cardsArray.length; i++) {
     const cardImg = document.createElement("img");
-    cardImg.setAttribute("src", "/public/images/blank.webp");
+    cardImg.setAttribute("src", "https://ran-sy.github.io/game-center/public/images/blank.webp");
     cardImg.setAttribute("alt", "blank");
     cardImg.setAttribute("data-id", i);
     cardImg.setAttribute("flipped", false);
@@ -78,7 +78,7 @@ function backToDefault() {
   resultDisplay.classList.add("text-red-500");
   resultDisplay.classList.remove("text-green-500");
   flippedCardImgs.forEach((card) => {
-    card.setAttribute("src", "/public/images/blank.webp");
+    card.setAttribute("src", "https://ran-sy.github.io/game-center/public/images/blank.webp");
     card.setAttribute("alt", "blank");
     card.setAttribute("flipped", false);
   });
@@ -88,7 +88,7 @@ function matchedTwo() {
   resultDisplay.classList.remove("text-red-500");
   resultDisplay.classList.add("text-green-500");
   flippedCardImgs.forEach((card) => {
-    card.setAttribute("src", "/public/images/correct.webp");
+    card.setAttribute("src", "https://ran-sy.github.io/game-center/public/images/correct.webp");
     card.setAttribute("alt", "matched");
     card.setAttribute("flipped", false);
     card.setAttribute("correct", true);
