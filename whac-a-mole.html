@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ranim" />
+    <meta name="description" content="whac-a-mole game" />
+    <link rel="stylesheet" href="./public/output.css" />
+    <link rel="stylesheet" href="./src/all.css" />
+    <title>whac-a-mole</title>
+  </head>
+  <body>
+    <div class="flex justify-between">
+      <h3 class="text-center p-2 m-2 bg-[#B0EEFE] w-full text-[#FD7F32]">
+        Your Score: <span id="result">0</span>
+      </h3>
+      <h3 class="text-center p-2 m-2 bg-[#B0EEFE] w-full text-[#FD7F32]">
+        Time Left: <span id="time-left">60</span>
+      </h3>
+    </div>
+    <div class="relative">
+      <div
+        id="grid"
+        class="flex flex-wrap justify-around w-full h-[80%] max-w-lg mx-auto mt-4"
+      >
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="1"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="2"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="3"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="4"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="5"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="6"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="7"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="8"
+        ></div>
+        <div
+          class="square w-36 h-36 mx-auto bg-[#B0EEFE] border-[#32d2fd] border-2"
+          id="9"
+        ></div>
+      </div>
+      <div
+        id="replayBtn"
+        class="hidden absolute justify-center align-middle w-full h-full inset-0 bg-black/50"
+      >
+        <button
+          class="h-24 w-full translate-y-[200%] shadow-xl shadow-gray-400"
+          onclick="startPlay()"
+        >
+          Replay
+        </button>
+      </div>
+    </div>
+    <script src="/src/js/whac-a-mole.js" type="text/javascript"></script>
+  </body>
+</html>

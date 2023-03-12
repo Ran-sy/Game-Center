@@ -12,17 +12,13 @@
     <meta name="author" content="Ranim" />
     <meta name="description" content="Game center for js games" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
   </head>
 
   <body>
-    <nav class="fixed top-0 left-0 w-full">
+    <nav class="fixed z-50 top-0 left-0 w-full">
       <div
         id="nav"
-        class="flex justify-around align-middle z-50 bg-[#32D2FD]/70 shadow-lg shadow-gray-400 lg:justify-around"
+        class="flex justify-around align-middle bg-[#32D2FD]/70 shadow-lg shadow-gray-400 lg:justify-around"
       >
         <img
           src="../public/images/gameCenter.png"
@@ -36,25 +32,13 @@
               <a href="/#RPS">RPS</a>
             </li>
             <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#second">second</a>
+              <a href="/#memory">Memory</a>
             </li>
             <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#three">three</a>
+              <a href="/#whac-a-mole">whac-a-mole</a>
             </li>
             <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#four">four</a>
-            </li>
-            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#five">five</a>
-            </li>
-            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#six">six</a>
-            </li>
-            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#seven">seven</a>
-            </li>
-            <li class="hover:bg-[#b0eefe] rounded-lg p-2">
-              <a href="/#eight">eight</a>
+              <a href="/#breakout">breakout</a>
             </li>
           </ul>
         </div>
@@ -64,7 +48,7 @@
       </div>
       <div
         id="sideNav"
-        class="absolute top-0 left-[-200%] z-50 w-full h-screen bg-white/80 ease-in-out duration-500 md:left-[-200%]"
+        class="absolute top-0 left-[-200%] w-full h-screen bg-white/80 ease-in-out duration-500 md:left-[-200%]"
       >
         <div class="flex flex-col justify-around align-middle p-2">
           <div class="bg-[#b0eefe] p-4 flex justify-around align-middle">
@@ -82,33 +66,25 @@
             <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#RPS"
               >RPS</a
             >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#second"
-              >second</a
+            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#memory"
+              >Memory</a
             >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#three"
-              >three</a
+            <a
+              class="w-full hover:bg-[#b0eefe] rounded-lg p-2"
+              href="/#whac-a-mole"
+              >whac-a-mole</a
             >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#four"
-              >four</a
-            >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#five"
-              >five</a
-            >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#six"
-              >six</a
-            >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#seven"
-              >seven</a
-            >
-            <a class="w-full hover:bg-[#b0eefe] rounded-lg p-2" href="/#eight"
-              >eight</a
+            <a
+              class="w-full hover:bg-[#b0eefe] rounded-lg p-2"
+              href="/#breakout"
+              >breakout</a
             >
           </ul>
         </div>
       </div>
     </nav>
     <main
-      class="relative -z-10 my-14 w-full h-screen bg-gradient-to-tl from-[#A90055] to-[#010125]"
+      class="relative my-14 w-full h-screen bg-gradient-to-tl from-[#A90055] to-[#010125]"
     >
       <div
         class="absolute w-[80%] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -130,177 +106,89 @@
       <div class="m-auto text-center grid lg:grid-cols-2 gap-8">
         <div
           id="RPS"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+          class="relative p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
         >
           <img
             src="/public/images/rps.jpg"
             alt="Rock Paper Scessior"
             loading="lazy"
-            class="bg-cover group-hover:opacity-40"
+            class="bg-cover max-h-52 group-hover:opacity-40"
           />
           <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+            class="w-full h-full absolute top-0 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 duration-300 ease-in"
           >
             <h3 class="font-vt">Rock Paper Scessior</h3>
             <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
+              <a href="/rps.html" target="_blank">Play Now</a>
             </button>
             <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
-            </button>
-          </div>
-        </div>
-        <div
-          id="second"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
-        >
-          <img
-            src="/public/images/rps.jpg"
-            alt="Second"
-            loading="lazy"
-            class="bg-cover group-hover:opacity-40"
-          />
-          <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
-          >
-            <h3 class="font-vt">Second</h3>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
-            </button>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
+              <a href="/rps.html" target="_blank">Go Play It</a>
             </button>
           </div>
         </div>
         <div
-          id="three"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+          id="memory"
+          class="relative p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
         >
           <img
-            src="/public/images/rps.jpg"
-            alt="Three"
+            src="/public/images/blank.webp"
+            alt="Memory"
             loading="lazy"
-            class="bg-cover group-hover:opacity-40"
+            class="bg-cover max-h-52 group-hover:opacity-40"
           />
           <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+            class="w-full h-full absolute top-0 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 duration-300 ease-in"
           >
-            <h3 class="font-vt">Three</h3>
+            <h3 class="font-vt uppercase">Memory</h3>
             <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
+              <a href="/memory.html" target="_blank">Play Now</a>
             </button>
             <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
+              <a href="/memory.html" target="_blank">Go Play It</a>
             </button>
           </div>
         </div>
         <div
-          id="four"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+          id="whac-a-mole"
+          class="relative p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
         >
           <img
-            src="/public/images/rps.jpg"
-            alt="Four"
+            src="/public/images/mole.png"
+            alt="Whac-a-mole"
             loading="lazy"
-            class="bg-cover group-hover:opacity-40"
+            class="bg-cover max-h-52 group-hover:opacity-40"
           />
           <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+            class="w-full h-full absolute top-0 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 duration-300 ease-in"
           >
-            <h3 class="font-vt">Four</h3>
+            <h3 class="font-vt">Whac-a-mole</h3>
             <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
+              <a href="/whac-a-mole.html" target="_blank">Play Now</a>
             </button>
             <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
+              <a href="/whac-a-mole.html" target="_blank">Go Play It</a>
             </button>
           </div>
         </div>
         <div
-          id="five"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
+          id="breakout"
+          class="relative p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
         >
           <img
-            src="/public/images/rps.jpg"
-            alt="Five"
+            src="/public/images/breakout.png"
+            alt="Breakout"
             loading="lazy"
-            class="bg-cover group-hover:opacity-40"
+            class="bg-cover max-h-52 group-hover:opacity-40"
           />
           <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
+            class="w-full h-full absolute top-0 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 duration-300 ease-in"
           >
-            <h3 class="font-vt">Five</h3>
+            <h3 class="font-vt">Breakout</h3>
             <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
+              <a href="/breakout.html" target="_blank">Play Now</a>
             </button>
             <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
-            </button>
-          </div>
-        </div>
-        <div
-          id="six"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
-        >
-          <img
-            src="/public/images/rps.jpg"
-            alt="Six"
-            loading="lazy"
-            class="bg-cover group-hover:opacity-40"
-          />
-          <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
-          >
-            <h3 class="font-vt">Six</h3>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
-            </button>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
-            </button>
-          </div>
-        </div>
-        <div
-          id="seven"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
-        >
-          <img
-            src="/public/images/rps.jpg"
-            alt="Seven"
-            loading="lazy"
-            class="bg-cover group-hover:opacity-40"
-          />
-          <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
-          >
-            <h3 class="font-vt">Seven</h3>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
-            </button>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
-            </button>
-          </div>
-        </div>
-        <div
-          id="eight"
-          class="relative -z-10 p-4 bg-[#B0EEFE] flex flex-col justify-around align-middle group"
-        >
-          <img
-            src="/public/images/rps.jpg"
-            alt="Eight"
-            loading="lazy"
-            class="bg-cover group-hover:opacity-40"
-          />
-          <div
-            class="w-full h-full absolute top-16 left-0 opacity-0 flex flex-col justify-center align-middle gap-3 contailer group-hover:opacity-100 group-hover:top-0"
-          >
-            <h3 class="font-vt">Eight</h3>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Play Now</a>
-            </button>
-            <button class="block p-4">
-              <a href="/#" target="_blank">Go Play It</a>
+              <a href="/breakout.html" target="_blank">Go Play It</a>
             </button>
           </div>
         </div>
@@ -319,9 +207,6 @@
         </p>
       </div>
     </footer>
-
-    <!-- <img src="https://source.unsplash.com/random/" class="bg-danger img-thumbnail" alt="img-thumbnail"> -->
-    <!-- <li><iframe src="https://embed.lottiefiles.com/animation/24703"></iframe></li> -->
 
     <script type="text/javascript" src="src\js\script.js"></script>
   </body>

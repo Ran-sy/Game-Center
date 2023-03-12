@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ranim" />
+    <meta name="description" content="ROCK PAPER SCESSIOR GAME" />
+    <link rel="stylesheet" href="./public/output.css" />
+    <link rel="stylesheet" href="./src/all.css" />
+    <title>ROCK PAPER SCISSORS</title>
+  </head>
+  <body class="bg-rps">
+    <h1
+      class="text-center font-serif text-[#FD7F32] bg-[#B0EEFE] shadow-xl shadow-gray-400"
+    >
+      Rock Paper Scissors
+    </h1>
+    <div class="w-full h-[90vh] flex flex-col justify-around align-middle">
+      <div class="p-4 flex flex-col justify-around">
+        <h2 class="p-2 m-1">
+          Computer Choice:
+          <span id="computer-choice" class="text-slate-100 uppercase"></span>
+        </h2>
+        <h2 class="p-2 m-1">
+          Your Choice:
+          <span id="your-choice" class="text-slate-100 uppercase"></span>
+        </h2>
+        <h2 class="p-2 m-1">Result: <span id="result"></span></h2>
+      </div>
+      <div class="flex justify-around w-full p-2">
+        <button id="1" class="p-3 uppercase">rock</button>
+        <button id="2" class="p-3 uppercase">paper</button>
+        <button id="3" class="p-3 uppercase">scissors</button>
+      </div>
+      <div class="w-[80%] mx-auto">
+        <h4 class="font-serif text-center uppercase bg-[#B0EEFE]">Statics</h4>
+        <div class="p-2 border-[#FD7F32] border-2 rounded-xl bg-slate-100 mt-2">
+          <div class="flex justify-evenly text-red-700 font-bold">
+            <p>computer wins</p>
+            <p>====></p>
+            <p id="computer-count">0</p>
+          </div>
+          <div class="flex justify-evenly font-bold text-green-700">
+            <p>user wins</p>
+            <p>====></p>
+            <p id="user-count">0</p>
+          </div>
+          <div class="flex justify-evenly font-bold">
+            <p>draw count</p>
+            <p>====></p>
+            <p id="draw-count">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/src/js/rps.js"></script>
+  </body>
+</html>
